@@ -16,7 +16,6 @@ public class Operacoes {
 	}
 	public boolean verificaNumero() {
 		int i;
-		//int aux = (numero /2); 
 		
 		for( i = 2; i < numero; i++) {
 			if(numero % 2 == 1) {
