@@ -16,10 +16,10 @@ public class Operacoes {
 	}
 	public boolean verificaNumero() {
 		int i;
-		int aux = (int) (numero /2); 
+		//int aux = (numero /2); 
 		
-		for( i = 2; i < aux; i++) {
-			if(numero % i == 0) {
+		for( i = 2; i < numero; i++) {
+			if(numero % 2 == 1) {
 				return true;
 			}
 		}
