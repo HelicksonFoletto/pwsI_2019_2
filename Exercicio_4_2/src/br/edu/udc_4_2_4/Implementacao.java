@@ -4,12 +4,12 @@ public class Implementacao {
 	
 	public static void multiploDeTres() {
 		int i = 1000;
-		while(i < 1200) {
+		
+		while( i < 1200) {
 			if(i % 3 == 0) {
 				System.out.println(i);
 			}	
 		}
-		System.out.print("Teste");
+		System.out.print("Teste2");
 	}
-	
 }
