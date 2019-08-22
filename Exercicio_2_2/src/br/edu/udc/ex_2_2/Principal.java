@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class Principal {
 
+	private static Scanner teclado;
+
 	public static void main(String[] args) {
 		System.out.println("Entre com dois números: ");
 		
-		Scanner teclado = new Scanner(System.in);
+		teclado = new Scanner(System.in);
 		int numero1 = teclado.nextInt();
 		int numero2 = teclado.nextInt();
 		
