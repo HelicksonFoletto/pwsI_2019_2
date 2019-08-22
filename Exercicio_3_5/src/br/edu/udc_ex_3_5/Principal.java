@@ -22,11 +22,8 @@ public class Principal {
 	}
 	public static void somaAumento(String cargo, float salario) {
 		float aumento = 0;
-		String aux = "diretor";
-		String aux2 = "gerente";
 		
-		if(cargo == aux) {
-			System.out.print("teste if 1");
+		if(cargo.contains("diretor")) {
 			if(salario >= 6000) {
 				aumento = (float) (salario * 0.015);
 				calculaNovoSalario(salario, aumento, cargo);
@@ -36,8 +33,7 @@ public class Principal {
 				calculaNovoSalario(salario, aumento, cargo);
 			}
 		}
-		if(cargo == aux2){
-			System.out.print("teste if 3");
+		if(cargo.contains("gerente")){
 			if(salario >= 5000) {
 				aumento = (float) (salario * 0.02);
 				calculaNovoSalario(salario, aumento, cargo);
@@ -47,8 +43,7 @@ public class Principal {
 				calculaNovoSalario(salario, aumento, cargo);
 			}	
 		}
-		if((cargo != "gerente") && (cargo != "diretor")) {
-			System.out.print("teste if 5\n");
+		if((!cargo.contains("gerente")) && (!cargo.contains("diretor"))) {
 			if((salario >= 2500)) {
 				aumento = (float) (salario * 0.03);
 				calculaNovoSalario(salario, aumento, cargo);
@@ -62,6 +57,5 @@ public class Principal {
 	public static void calculaNovoSalario(float salario, float aux, String cargo) {
 		System.out.printf("Seu salário atual é %.2f\nSeu aumento é de %.2f\nTotal do novo salário %.2f\n",
 				salario,aux, salario+aux);
-		System.out.printf("%s",cargo);
 	}
 }
