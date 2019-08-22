@@ -4,9 +4,8 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Implementacao.multiploDeTres();
+		Operacao.multiplosDeTresWhile();
 		
-		System.out.print("Teste");
 	}
 
 }
