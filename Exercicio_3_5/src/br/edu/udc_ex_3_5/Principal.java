@@ -23,7 +23,7 @@ public class Principal {
 	public static void somaAumento(String cargo, float salario) {
 		float aumento = 0;
 		
-		if(cargo.contains("diretor")) {
+		if(cargo.equals ("diretor")) {
 			if(salario >= 6000) {
 				aumento = (float) (salario * 0.015);
 				calculaNovoSalario(salario, aumento, cargo);
