@@ -25,9 +25,9 @@ public class Principal {
 	
 	public static void calculoMatematico(int x) {
 		System.out.println(x);
-		while(x >=0) {
+		while(x != 1) {
 			if(x % 2 ==0) {
-				x = x /2;
+				x = x / 2;
 			}else {
 				x = ((2 * x) / 3) + 1;
 			}
