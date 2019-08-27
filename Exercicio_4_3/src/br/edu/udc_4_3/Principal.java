@@ -31,8 +31,7 @@ public class Principal {
 			}else {
 				x = ((2 * x) / 3) + 1;
 			}
-			System.out.println(x);
-						
+			System.out.println(x);		
 		}
 	}
 }
