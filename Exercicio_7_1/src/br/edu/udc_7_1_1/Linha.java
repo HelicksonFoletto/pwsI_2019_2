@@ -71,6 +71,15 @@ public class Linha {
 	
 	public String toString() {
 		return "[" + a + " ; " + b + "]";
-	}
-	
+	}	
+	 public double base(){
+		 if(a.getX() < b.getX())
+			 return b.getX() - a.getX();
+		 return a.getX() - b.getX();
+	 }
+	 public double altura(){
+		 if(a.getY() < b.getY())
+			 return b.getY() - a.getY();
+		 return a.getY() - b.getY();
+	 }
 }
