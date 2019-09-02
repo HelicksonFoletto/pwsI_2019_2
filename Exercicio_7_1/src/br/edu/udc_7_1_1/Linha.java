@@ -1,6 +1,6 @@
 package br.edu.udc_7_1_1;
 
-public class Linha {
+public class Linha extends FormaGeometrica{
 	private Ponto2D a;
 	private Ponto2D b;
 	
@@ -34,14 +34,6 @@ public class Linha {
 		return new Ponto2D((a.getX()+b.getX())/2,
 				(a.getY()+b.getY())/2);
 	} 
-	
-	public float distancia(Linha l) {
-		return centro().distancia(l.centro());
-	}
-	
-	public float distancia(Ponto2D pt) {
-		return centro().distancia(pt);
-	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -65,21 +57,27 @@ public class Linha {
 		return true;
 	}
 	
-	public String ObjectToString() {
-		return super.toString();
-	}
-	
 	public String toString() {
 		return "[" + a + " ; " + b + "]";
 	}	
-	 public double base(){
-		 if(a.getX() < b.getX())
-			 return b.getX() - a.getX();
-		 return a.getX() - b.getX();
+
+	
+	@Override
+	public float perimetro() {
+		return a.distancia(b);
+	}
+
+	@Override
+	public float area() {
+		return 0;
+	}
+
+	@Override
+	public float largura() {
+		return Math.abs(a.getX() - b.getX());
+	}
+	 public float altura(){
+		 return Math.abs(a.getY() - b.getY());
 	 }
-	 public double altura(){
-		 if(a.getY() < b.getY())
-			 return b.getY() - a.getY();
-		 return a.getY() - b.getY();
-	 }
+
 }
