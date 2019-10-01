@@ -50,7 +50,7 @@ public class Data {
 			this.ano = 0;
 	}
 
-	void mostrarData() {
+	public void mostrarData() {
 		if (dia > 0 && mes > 0 && ano > 0)
 			System.out.printf("%d de %s de %d\n", dia, mesExtenco(mes), ano);
 		else
