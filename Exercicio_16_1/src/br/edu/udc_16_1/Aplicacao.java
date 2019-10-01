@@ -10,12 +10,10 @@ public class Aplicacao {
 
 		lista.inserirInicio(new Ponto2D(5, 2));
 		lista.inserirInicio(new Ponto2D(6, 9));
-		lista.InserirMeio(new Ponto2D(2, 5), 3);
+		lista.InserirMeio(new Ponto2D(2, 5), 2);
 		lista.inserirFim(new Ponto2D(6, 9));
 		lista.inserirFim(new Ponto2D(0, 10));
-		lista.inserirFim(new Ponto2D(15, 12));
-		lista.inserirFim(new Ponto2D(31, 25));
-		lista.inserirFim(new Ponto2D(1, 2));
+		
 		
 		
 		System.out.println("Pesquisa" + lista.pesquisar(3));
