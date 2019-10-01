@@ -1,6 +1,8 @@
 package br.edu.udc_8_5;
 
-public class Aluno {
+import br.edu.udc.psw.Pessoa;
+
+public class Aluno extends Pessoa{
 	 String nomeDoCurso;
 	 float notas[] = new float[4];
 	 
