@@ -36,7 +36,7 @@ public class JanelaEntrada extends JFrame{
 			}
 		});
 		add(nome);
-		/* Adiciona o nome numa frase após o usuário precionar enter*/
+		/* Adiciona o nome em uma frase após o usuário pressionar enter*/
 		
 		add(new JTextField("Digite algo aqui",20));
 		
@@ -44,21 +44,21 @@ public class JanelaEntrada extends JFrame{
 		JTextField textField = new JTextField("Campo não editável");
 		textField.setEditable(false); 
 		add(textField);
-		/* cria uma caixa de dialogo não editável pelo usuário */
+		/* cria uma caixa de diálogo não editável pelo usuário */
 		
 		
 		add(new JLabel("Digite uma senha:"));
 		//add(new JPasswordField(20));
 		JPasswordField password = new JPasswordField(20);
 		password.setToolTipText("Uma dica para o campo de senha...");
-		/*campo para gerar um lembrede para senhas. Dicas */
+		/*campo para gerar um lembrete para senhas. Dicas */
 		password.addActionListener(new TextFieldHandler());
 		/*vincula a class abaixo. Objetivo é ao pressionar enter é ativado o evento onde
 		 * a senha é mostrada
 		 */		
 		add(password);
 		/* campo para digitação de senhas, já vem com a implementação de esconder
-		 * o que se é digitado. 
+		 * o que é digitado. 
 		 * */
 		
 		JButton button = new JButton ("Comando");
@@ -71,8 +71,8 @@ public class JanelaEntrada extends JFrame{
 			}
 		});
 		add(button);
-		/* Criar caixa de dialogo para aparecer o nome do individuo e a senha logo em seguida
-		 * se precionar o botão adicionado */
+		/* Criar caixa de diálogo para aparecer o nome e a senha logo em seguida
+		 * se pressionar o botão adicionado */
 		
 		
 		setVisible(true);
