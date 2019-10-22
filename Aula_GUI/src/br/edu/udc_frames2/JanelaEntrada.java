@@ -31,7 +31,7 @@ public class JanelaEntrada extends JFrame{
 		JTextField nome = new JTextField(20);
 		nome.addActionListener(new ActionListener() {
 			@Override
-			public void actionPerformed(ActionEvent event) {
+			public void actionPerformed(ActionEvent event) { //class anônima
 				JOptionPane.showMessageDialog(nome, "Olá " + nome.getText() + " tudo bem?");
 			}
 		});
