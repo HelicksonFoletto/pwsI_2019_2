@@ -6,8 +6,6 @@ import edu.udc.psw.colecao.IteradorAbstrato;
 
 
 public class Pilha<E> implements Iterable<E>{
-	/* Classe privativa NoLista */
-
 	private class NoLista {
 		NoLista proximo;
 		E obj;
@@ -145,7 +143,7 @@ public class Pilha<E> implements Iterable<E>{
 		return new IteradorJava(topo);
 	}
 
-	public boolean inserir(E obj) {
+	public boolean push(E obj) {
 
 		NoLista n = new NoLista(obj);
 		
@@ -170,7 +168,7 @@ public class Pilha<E> implements Iterable<E>{
 
 	}
 
-	public boolean remover() {
+	public boolean pop() {
 		boolean flag = false; /* Variável para controle de remoção */
 
 		/* Remoção em lista vazia */
@@ -196,5 +194,6 @@ public class Pilha<E> implements Iterable<E>{
 		}
 
 		return flag;
+
 	}
 }
